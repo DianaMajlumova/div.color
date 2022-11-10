@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+
+<body>
+
+    <div class="Div1">
+       <button id="1"><h2><b>it is blue</b></h2></button>
+    </div>
+    <div class="Div2">
+        <button id="2"><h2><b>it is red</b></h2></button>
+    </div>
+    <div class="Div3">
+        <button id="3"><h2><b>it is green</b></h2></button>
+    </div>
+<style>
+    .Div1 {
+        border: 5px outset blue;
+        background-color: blue;
+    }
+
+    .Div2 { 
+        border: 5px outset red;
+        background-color: red;
+    }
+
+    .Div3 {
+        border: 5px outset green;
+        background-color: green;
+    }
+</style>
+<script>
+    document.getElementById("1").addEventListener("click" , function(){
+        document.body.style.backgroundColor = "blue";
+    })
+        document.getElementById("2").addEventListener("click" , function(){
+        document.body.style.backgroundColor = "red";
+        })
+        document.getElementById("3").addEventListener("click" , function(){
+        document.body.style.backgroundColor = "green";
+        })
+    
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
